@@ -1,3 +1,3 @@
 # Front-end-Technical-test
 
-![db test] (/images/design.png "Test technique Le Wagon")
+![db test] (FT-test-db/images/design.png "Test technique Le Wagon")
