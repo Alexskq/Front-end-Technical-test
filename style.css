@@ -1,0 +1,59 @@
+/* ###  Racine ### */
+:root{
+  --blue : rgb(18, 162, 252);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ### Top nav-bar ### */
+.topnav{
+  box-shadow: 0px 8px 7px 0px rgba(0,0,0,0.1);
+  padding-bottom: 1em;
+}
+
+.top-picture{
+  width: 30px;
+  height: 30px;
+}
+
+.search-bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8em;
+}
+
+#search{
+  background-color: lightgrey;
+  border-radius: 1em;
+  border: 0px;
+}
+
+.info-nav-bar{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.name{
+  display: grid;
+}
+
+.btn-link{
+  margin-left: 0.6em;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  & a{
+    text-decoration: none;
+    background: var(--blue);
+    padding: 0.6em 0.8em;
+    border-radius: 20px;
+    color: white;
+    width: 6em;
+    text-align: center;
+  }
+}
