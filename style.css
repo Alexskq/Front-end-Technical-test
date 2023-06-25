@@ -6,7 +6,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
+
 
 /* ### Top nav-bar ### */
 .topnav{
@@ -30,6 +32,7 @@
   background-color: lightgrey;
   border-radius: 1em;
   border: 0px;
+  opacity: 0.5;
 }
 
 .info-nav-bar{
@@ -40,6 +43,7 @@
 
 .name{
   display: grid;
+  margin: 0.5em;
 }
 
 .btn-link{
@@ -56,4 +60,65 @@
     width: 6em;
     text-align: center;
   }
+}
+
+.big-profil{
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5em;
+}
+
+/* ##### Cards ###### */
+
+h1{
+  font-size: 1.5em;
+  margin: 1em 1em 0.5em;
+}
+
+.card{
+  margin: 0.5em;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 8px 7px 0px rgba(0,0,0,0.1);
+
+}
+
+.yellow-bar{
+  width: 2em;
+  background: rgb(255, 225, 0);
+  margin-right: 0.5em;
+
+}
+
+.card-info{
+  padding:2em 1em;
+  & h2{
+    margin-bottom: 0.5em;
+  }
+
+}
+
+.card-link{
+  padding-top: 2em;
+  float: right;
+  padding-right: 2em;
+}
+
+i:nth-child(2){
+  margin: 0 1em;
+}
+
+/* ##### Side Content ##### */
+
+.side-content{
+  padding: 0.5em 1.3em 1.3em;
+}
+
+hr{
+  margin: 1em;
+}
+
+h3{
+  margin-bottom: 0.3em;
 }
