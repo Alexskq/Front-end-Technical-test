@@ -156,3 +156,23 @@ h3{
 .subname{
   color: var(--dark-gray);
 }
+
+
+/* Media Queries */
+
+@media (min-width: 400px){
+  .container{
+    display: flex;
+      & .top-title{
+      position: absolute;
+      
+    }
+  }
+  .content-left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4em;
+  }
+
+  
+}
