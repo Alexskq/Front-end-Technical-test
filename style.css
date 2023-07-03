@@ -174,5 +174,28 @@ h3{
     padding-top: 4em;
   }
 
+  /* ###### Side Bar ########## */
+  
+  .content-body{
+    display: flex;
+  }
+  
+  .Navbar{
+    width: 65em;
+    background-color: var(--blue);
+    color: white;
+  }
+
+  i{
+    padding-right: 1em;
+  }
+
+  .Navbar__Link{
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.5em;
+    margin: 1em 0 2em;
+  }
+  
   
 }
