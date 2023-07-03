@@ -1,12 +1,21 @@
 /* ###  Racine ### */
 :root{
   --blue : rgb(18, 162, 252);
+  --gray : #e9e6e6;
+  --dark-gray :#a9a9a9;
 }
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
+
+.container{
+  background-color: var(--gray);
+  padding-bottom: 1em;
+}
+
 
 /* ### Top nav-bar ### */
 .topnav{
@@ -30,6 +39,7 @@
   background-color: lightgrey;
   border-radius: 1em;
   border: 0px;
+  opacity: 0.5;
 }
 
 .info-nav-bar{
@@ -40,6 +50,7 @@
 
 .name{
   display: grid;
+  margin: 0.5em;
 }
 
 .btn-link{
@@ -56,4 +67,92 @@
     width: 6em;
     text-align: center;
   }
+}
+
+.big-profil{
+  width: 50px;
+  height: 50px;
+  margin-left: 0.5em;
+}
+
+/* ##### Cards ###### */
+
+h1{
+  font-size: 1.5em;
+  padding: 1em 1em 0.5em;
+}
+
+.card{
+  margin: 0.5em;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 8px 7px 0px rgba(0,0,0,0.1);
+  background-color: white;
+
+}
+
+.yellow-bar{
+  width: 2em;
+  background: rgb(255, 225, 0);
+  margin-right: 0.5em;
+
+}
+
+.card-info{
+  padding:2em 1em;
+  & h2{
+    margin-bottom: 0.5em;
+  }
+
+}
+
+.card-link{
+  padding-top: 2em;
+  float: right;
+  padding-right: 2em;
+}
+
+i:nth-child(2){
+  margin: 0 1em;
+}
+
+/* ##### Side Content ##### */
+
+.side-content{
+  padding: 1.5em;
+  box-shadow: 0px 8px 7px 0px rgba(0,0,0,0.1);
+  margin: 0.5em;
+  border-radius: 10px;
+  background-color: white;
+
+}
+
+hr{
+  margin: 1em;
+}
+
+h3{
+  margin-bottom: 0.3em;
+}
+
+/* ### Side bottom #### */
+
+.side-content-trend{
+  margin: 0.5em;
+  background-color: white;
+  border-radius: 10px;
+  & .info-nav-bar{
+    padding: 1em 0;
+    margin: 0;
+
+  }
+}
+
+.title{
+
+}
+
+.subname{
+  color: var(--dark-gray);
 }
