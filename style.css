@@ -1,7 +1,8 @@
 /* ###  Racine ### */
 :root{
   --blue : rgb(18, 162, 252);
-  --gray : #e9e6e6
+  --gray : #e9e6e6;
+  --dark-gray :#a9a9a9;
 }
 *{
   box-sizing: border-box;
@@ -12,6 +13,7 @@
 
 .container{
   background-color: var(--gray);
+  padding-bottom: 1em;
 }
 
 
@@ -118,7 +120,7 @@ i:nth-child(2){
 /* ##### Side Content ##### */
 
 .side-content{
-  padding: 0.5em 1.3em 1.3em;
+  padding: 1.5em;
   box-shadow: 0px 8px 7px 0px rgba(0,0,0,0.1);
   margin: 0.5em;
   border-radius: 10px;
@@ -149,4 +151,8 @@ h3{
 
 .title{
 
+}
+
+.subname{
+  color: var(--dark-gray);
 }
