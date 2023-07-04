@@ -211,6 +211,12 @@ h3{
     margin-top: 2em;
 
   }
+
+  /* ####### TOP BAR ########### */
+
+  .search-bar{
+    display: inline-block;
+  }
   
   
 }
