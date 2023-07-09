@@ -26,6 +26,7 @@
 .top-picture{
   width: 30px;
   height: 30px;
+  margin: 0 1rem;
 }
 
 .search-bar{
@@ -231,9 +232,9 @@ h3{
   }
 
   #name{
-    
-  }
 
+  }
+/* TODO : Seconde partie de la top bar a faire */
 
   
   
