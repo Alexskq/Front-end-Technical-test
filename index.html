@@ -5,167 +5,220 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
   <title>Front-end Technical Test</title>
 </head>
 <body>
   <!-- ############## Side Bar ############### -->
-  
-  <!-- ########### Top nav bar ############# -->
-  <div class="topnav">
-    <div class="search-bar">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" id="search">
-      <i class="fa-regular fa-bell"></i>
-      <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="top-picture">
-      <span>Morgan Oakley</span>
+  <div class="content-body">
+    <div id="main">
+      <i class="fas fa-bars ffa" onclick="openNav()"></i>
     </div>
-    <div class="info-nav-bar">
-        <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
-      <div class="name">
-        <span>Hi there,</span>
-        <span>Morgan Oakley (@morgan)</span>
+    <div class="Navbar" id="mySidebar">
+       <div class="Nav__title Navbar__Link Navbar__Link-toggle ">
+         <i class="fas fa-bars" onclick="closeNav()"></i> Dashboard
+       </div>
+     <nav class="Navbar__Items" >
+       <div class="Navbar__Link">
+        <i class="fa-solid fa-house"></i> Home
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-regular fa-address-card"></i> Profile
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-regular fa-message"></i> Message
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-solid fa-clock-rotate-left"></i> History
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-solid fa-list-check"></i> Tasks
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-solid fa-people-group"></i> Communities
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-solid fa-gear"></i> Settings
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-solid fa-square-phone"></i> Support
+       </div>
+       <div class="Navbar__Link">
+        <i class="fa-solid fa-lock"></i> Privacy
+       </div>
+     </nav>
+     
+    </div>
+    <div class="outer-sidebar">
+     <div class="topnav">
+      <div id="main2" onclick="openNav()">
+        <i class="fas fa-bars ffa" onclick="openNav()"></i>
       </div>
-    </div>
-    <div class="btn-link">
-      <a href="">New</a>
-      <a href="">Upload</a>
-      <a href="">Share</a>
-    </div>
-  </div>
-<!-- ########### Card #########-->
-<div class="container">
-  <h1 class="top-title">Your Projects</h1>
-  <div class="content content-left">
-    <div class="card">
-      <div class="yellow-bar"></div>
-      <div class="card-info">
-        <h2>Super Cool Projet</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
-        <div class="card-link">
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="yellow-bar"></div>
-      <div class="card-info">
-        <h2>Less Cool Project</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
-        <div class="card-link">
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="yellow-bar"></div>
-      <div class="card-info">
-        <h2>Impossible App</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
-        <div class="card-link">
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="yellow-bar"></div>
-      <div class="card-info">
-        <h2>Easy Peasy App</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
-        <div class="card-link">
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="yellow-bar"></div>
-      <div class="card-info">
-        <h2>Ad Blocker</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
-        <div class="card-link">
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="yellow-bar"></div>
-      <div class="card-info">
-        <h2>Money Maker</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
-        <div class="card-link">
-          <i class="fa-regular fa-star"></i>
-          <i class="fa-regular fa-eye"></i>
-          <i class="fa-solid fa-share-nodes"></i>
-        </div>
-      </div>
-    </div>
-  </div>
+       <div class="search-bar">
+         <i class="fa-solid fa-magnifying-glass"></i>
+         <input type="text" id="search">
+         <i class="fa-regular fa-bell"></i>
+         <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="top-picture">
+         <span id="name"><strong>Morgan Oakley</strong></span>
+       </div>
 
-  <!--- ############# Right Content ########### --->
-    <div class="content-right">
-      <h1>Annoucements</h1>
-      <div class="side-content">
-        <div class="side-content-top">
-          <div class="side-info">
-            <h3>Site Maintenance</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum fugiat mollitia quaerat ipsum illum, consectetur quidem molestiae excepturi, nesciunt illo sapiente eius similique necessitatibus eveniet. Illum reiciendis hic earum vel?</p>
+       <div class="content-info-bar">
+          <div class="info-nav-bar">
+            <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
+            <div class="name">
+              <span>Hi there,</span>
+              <span id="name">Morgan Oakley (@morgan)</span>
+            </div>
           </div>
-          <hr>
-          <div class="side-info">
-            <h3>Community Share Day</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius quia quod error quos! Qui eveniet autem, unde, dolore laborum commodi corrupti quod et nam, est dolores modi cumque quasi!</p>
+          <div class="btn-link">
+            <a href="">New</a>
+            <a href="">Upload</a>
+            <a href="">Share</a>
           </div>
-          <hr>
-          <div class="side-info">
-            <h3>Update Privacy Policy</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ab magnam earum accusantium quidem nihil vitae officiis rem asperiores illum, at sint vero totam. Hic vero dolor saepe numquam optio?</p>
-          </div>
-        </div>
-      </div>
-      <!-- ######## Side Top ########## -->
-      <h1>Trending</h1>
-      <div class="side-content-trend">
-        <div class="info-nav-bar">
-          <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
-          <div class="name">
-            <span class="title">@tegan</span>
-            <span class="subname">World Peace Builder</span>
-          </div>
-        </div>
-        <div class="info-nav-bar">
-          <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
-          <div class="name">
-            <span class="title">@morgan</span>
-            <span class="subname">Super Cool project</span>
-          </div>
-        </div>
-        <div class="info-nav-bar">
-          <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
-          <div class="name">
-            <span class="title">@kendall</span>
-            <span class="subname">Life Changing App</span>
-          </div>
-        </div>
-        <div class="info-nav-bar">
-          <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
-          <div class="name">
-            <span class="title">@alex</span>
-            <span class="subname">No Traffic Maker</span>
-          </div>
-        </div>
-      </div>  
-    </div>
-    
+       </div>
+       
+     </div>
+   <!-- ########### Card #########-->
+     <div class="container">
+     <h1 class="top-title">Your Projects</h1>
+     <div class="content content-left">
+       <div class="card">
+         <div class="yellow-bar"></div>
+         <div class="card-info">
+           <h2>Super Cool Projet</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
+           <div class="card-link">
+             <i class="fa-regular fa-star"></i>
+             <i class="fa-regular fa-eye"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+           </div>
+         </div>
+       </div>
+       <div class="card">
+         <div class="yellow-bar"></div>
+         <div class="card-info">
+           <h2>Less Cool Project</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
+           <div class="card-link">
+             <i class="fa-regular fa-star"></i>
+             <i class="fa-regular fa-eye"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+           </div>
+         </div>
+       </div>
+       <div class="card">
+         <div class="yellow-bar"></div>
+         <div class="card-info">
+           <h2>Impossible App</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
+           <div class="card-link">
+             <i class="fa-regular fa-star"></i>
+             <i class="fa-regular fa-eye"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+           </div>
+         </div>
+       </div>
+       <div class="card">
+         <div class="yellow-bar"></div>
+         <div class="card-info">
+           <h2>Easy Peasy App</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
+           <div class="card-link">
+             <i class="fa-regular fa-star"></i>
+             <i class="fa-regular fa-eye"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+           </div>
+         </div>
+       </div>
+       <div class="card">
+         <div class="yellow-bar"></div>
+         <div class="card-info">
+           <h2>Ad Blocker</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
+           <div class="card-link">
+             <i class="fa-regular fa-star"></i>
+             <i class="fa-regular fa-eye"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+           </div>
+         </div>
+       </div>
+       <div class="card">
+         <div class="yellow-bar"></div>
+         <div class="card-info">
+           <h2>Money Maker</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum at eum nemo porro ullam! A saepe commodi numquam, repellat earum sunt? Temporibus aliquam corrupti esse magnam recusandae qui vero blanditiis!</p>
+           <div class="card-link">
+             <i class="fa-regular fa-star"></i>
+             <i class="fa-regular fa-eye"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+           </div>
+         </div>
+       </div>
+     </div>
    
-</div>
+     <!--- ############# Right Content ########### --->
+       <div class="content-right">
+         <h1>Annoucements</h1>
+         <div class="side-content">
+           <div class="side-content-top">
+             <div class="side-info">
+               <h3>Site Maintenance</h3>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum fugiat mollitia quaerat ipsum illum, consectetur quidem molestiae excepturi, nesciunt illo sapiente eius similique necessitatibus eveniet. Illum reiciendis hic earum vel?</p>
+             </div>
+             <hr>
+             <div class="side-info">
+               <h3>Community Share Day</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eius quia quod error quos! Qui eveniet autem, unde, dolore laborum commodi corrupti quod et nam, est dolores modi cumque quasi!</p>
+             </div>
+             <hr>
+             <div class="side-info">
+               <h3>Update Privacy Policy</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ab magnam earum accusantium quidem nihil vitae officiis rem asperiores illum, at sint vero totam. Hic vero dolor saepe numquam optio?</p>
+             </div>
+           </div>
+         </div>
+         <!-- ######## Side Top ########## -->
+         <h1>Trending</h1>
+         <div class="side-content-trend">
+           <div class="info-nav-bar">
+             <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
+             <div class="name">
+               <span class="title">@tegan</span>
+               <span class="subname">World Peace Builder</span>
+             </div>
+           </div>
+           <div class="info-nav-bar">
+             <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
+             <div class="name">
+               <span class="title">@morgan</span>
+               <span class="subname">Super Cool project</span>
+             </div>
+           </div>
+           <div class="info-nav-bar">
+             <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
+             <div class="name">
+               <span class="title">@kendall</span>
+               <span class="subname">Life Changing App</span>
+             </div>
+           </div>
+           <div class="info-nav-bar">
+             <img src="/images/icons8-utilisateur-homme-64.png" alt="profil" class="big-profil">
+             <div class="name">
+               <span class="title">@alex</span>
+               <span class="subname">No Traffic Maker</span>
+             </div>
+           </div>
+         </div>  
+       </div>
+       
+      
+     </div>
+    </div>
+  </div>
+  <!-- ########### Top nav bar ############# -->
+  <script src="script.js" ></script>
 </body>
 </html>
