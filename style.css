@@ -178,7 +178,7 @@ h3{
 
 /* Media Queries */
 
-@media (min-width: 400px){
+@media (min-width: 600px){
   .container{
     display: flex;
       & .top-title{
@@ -258,17 +258,49 @@ h3{
 
   }
 
-.main{
-  display: block;
-  padding: 1rem;
-  text-align: center;
-  & .fas.fa-bars.ffa{
-    padding: 0;
+  #main{
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--blue);
+    color: white;
   }
 
-}
-#mySidebar{
-  width: 0;
-}
+  #main > .fas.fa-bars.ffa{
+    font-style: 1.5rem;
+    padding: 0;
+  }
+  #mySidebar{
+    width: 0;
+    
+  }
+  /* #main2{
+    display:none;
+  } */
   
 }
+
+ @media (max-width:400px){
+  #mySidebar{
+    display: none;
+  }
+
+  #main{
+    display: none;
+  }
+  #main2{
+    background-color: var(--blue);
+    color: white;
+    padding: 0.8rem;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Assurez-vous que le z-index est supérieur à celui du reste du contenu */
+  }
+  
+  
+} 
