@@ -215,8 +215,26 @@ h3{
   /* ####### TOP BAR ########### */
 
   .search-bar{
-    display: inline-block;
+    display: inline-flex;
+    
   }
+
+  #search{
+    width: 51rem;
+    height: 1.8rem;
+    margin-right: 5rem;
+
+  }
+
+  .topnav{
+    padding: 0 2rem 1rem;
+  }
+
+  #name{
+    
+  }
+
+
   
   
 }
